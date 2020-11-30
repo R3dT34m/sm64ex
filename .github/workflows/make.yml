@@ -16,7 +16,7 @@ jobs:
 
     - name: Build
       shell: bash
-      run: make
+      run: make TARGET_BITS=0 -j4
       
     - name: Upload artifact
       uses: actions/upload-artifact@v2
