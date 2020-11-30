@@ -16,10 +16,10 @@ jobs:
 
     - name: Build
       shell: bash
-      run: make TARGET_RPI=1 -j4
+      run: make
       
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: Mario
-        path: build/us_pc/sm64.us.f3dex2e.arm
+        path: build/us_pc/sm64.us.*
